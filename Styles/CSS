@@ -137,6 +137,15 @@
     align-items: center;
 }
 
+.form .input {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.form .input:focus {
+    outline: 1px solid #13a49d;
+}
+
 .form input {
     height: 45px;
     border: none;
@@ -159,7 +168,8 @@
 
 .input::placeholder {
     position: relative;
-    left: 15px;
+    left: 5px;
+    font-size: 14px;
 }
 
 .btn-sign-up {
