@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+}
+
+.container .first-content {
+    display: flex;
+}
+
+.content {
+    border-radius: 15px;
+    background-color: #fff;
+    height: 70%;
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: #13a49d;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    left: 0;
+}
+
+.first-collum {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.first-collum .title {
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.description {
+    font-size: 16px;
+    margin: 7px 0px;
+}
+
+.first-collum .description {
+    color: #fff;
+    line-height: 25px;
+}
+
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-sign-in {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.btn-sign-in:hover {
+    background-color: #fff;
+    color: #13a49d;
+}
+
+.first-content .second-collum {
+    z-index: 11;
+}
+
+.second-collum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.second-collum .title {
+    color: #13a49d;
+}
+
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+
+.link-social-media {
+    border: 1px solid #95a5a6;
+    color: #95a5a6;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    margin: 9px 5px;
+    transition: 0.5s;
+}
+
+.link-social-media:hover {
+    background-color: #13a49d;
+    color: #fff;
+    border: #13a49d;
+}
+
+.second-collum .description {
+    color: #7f8c8d;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input {
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    width: 100%;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    width: 350px;
+    margin: 6px;
+}
+
+.label .icon-input {
+    color: #7f8c8d;
+    padding: 0 7px;
+}
+
+.input::placeholder {
+    position: relative;
+    left: 15px;
+}
+
+.btn-sign-up {
+    background-color: #13a49d;
+    border: 1px solid #fff;
+    transition: 0.5s;
+}
+
+.btn-sign-up:hover {
+    background-color: #fff;
+    color: #13a49d;
+    border-color: #13a49d;
+}
+
+/* Second Content */
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-collum {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-collum {
+    order: 1;
+    z-index: -1;
+}
+
+.second-content .btn-sign-up {
+    background-color: #13a49d;
+    border: 1px solid #fff;
+}
+
+.second-content .btn-sign-up:hover {
+    background-color: #fff;
+    color: #13a49d;
+    border-color: #13a49d;
+}
+
+.second-content .btn-sign-in {
+    background-color: #13a49d;
+    border: 1px solid #fff;
+}
+
+.second-content .btn-sign-in:hover {
+    background-color: #fff;
+    color: #13a49d;
+    border-color: #13a49d;
+}
+
+.forgot-password {
+    color: #34495e;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.sign-in-js .first-content .second-collum {
+    z-index: -1;
+    position: relative;
+    animation: fadeOutLeft 2s;
+}
+
+.sign-in-js .second-content .second-collum {
+    z-index: 10;
+    animation: fadeIn 2s;
+}
+
+.sign-in-js .second-content .first-collum {
+    z-index: 13;
+    animation: fadeIn 2s;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    animation: slideIn 2s;
+    z-index: 11;
+}
+
+.sign-up-js .content::before {
+    animation: slideOut 2s;
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first-collum,
+.sign-up-js .second-content .second-collum {
+    z-index: -1;
+    position: relative;
+    animation: fadeOutLeft 2s;
+}
+
+.sign-up-js .first-content .second-collum {
+    animation: fadeIn 2s;
+}
+
+.sign-up-js .first-content .second-collum {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-collum {
+    z-index: 13;
+    animation: fadeIn 2s;
+}
+
+.sign-up-js .second-content .second-collum {
+    position: relative;
+    animation: fadeOutRight 2s;
+    z-index: -1;
+}
+
+/* Animação css */
+
+@keyframes slideIn {
+    from {
+        left: 0;
+        width: 40%;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 60%;
+        width: 40%;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+@keyframes fadeOutLeft {
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    50% {
+        left: -110px;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        right: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    50% {
+        right: -110px;
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    to {
+        right: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
