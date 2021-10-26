@@ -1,6 +1,5 @@
 <!-- 
     Ver como mexer na mensagem de preencha esse campo no css;
-    Ver como deixar todos as primeiras letras do nome serei maiusculas.
  -->
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,10 +7,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="Styles/CSS" />
+        <link rel="stylesheet" href="Styles/index.css" />
         <link rel="shortcut icon" href="FavIcon/book-solid-24.png" type="image/x-icon" />
         <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
-        <title>Home - Primeiro Site</title>
+        <title>Login - Primeiro Site</title>
     </head>
     <body class="sign-up-js">
         <div class="container">
@@ -48,18 +47,25 @@
                     </div>
                     <!-- Acaba Social Medias -->
                     <p class="description">Ou cadastre-se utilizando seu Email</p>
-                    <form action="#" class="form" autocomplete="off">
+                    <form action="#" class="form">
                         <label class="label">
                             <i class="bx bx-user icon-input"></i>
-                            <input type="text" placeholder="Nome" class="input" required />
+                            <input
+                                type="text"
+                                placeholder="Nome"
+                                class="input"
+                                id="nome"
+                                pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"
+                                required
+                            />
                         </label>
                         <!-- Acaba primeira Label -->
-                        <label class="label">
+                        <label class="label email">
                             <i class="bx bx-envelope icon-input"></i>
                             <input type="email" placeholder="Email" class="input" required />
                         </label>
                         <!-- Acaba segunda Label -->
-                        <label class="label">
+                        <label class="label senha">
                             <i class="bx bx-lock-alt icon-input"></i>
                             <input type="password" placeholder="Password" class="input" required />
                         </label>
@@ -100,7 +106,7 @@
                     </ul>
                     <!-- Acaba Social Medias -->
                     <p class="description">Ou entre com o seu Email</p>
-                    <form action="#" class="form" autocomplete="off">
+                    <form action="#" class="form">
                         <label class="label">
                             <i class="bx bx-envelope icon-input"></i>
                             <input type="email" placeholder="Email" class="input" required />
@@ -120,6 +126,6 @@
             </div>
             <!-- Acaba Second-Content -->
         </div>
-        <script src="Js/script.js"></script>
+        <script src="Js/animation.js"></script>
     </body>
 </html>

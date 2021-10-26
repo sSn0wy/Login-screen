@@ -142,6 +142,10 @@
     font-size: 15px;
 }
 
+.form .input[type="text"] {
+    text-transform: capitalize;
+}
+
 .form .input:focus {
     outline: 1px solid #13a49d;
 }
@@ -160,6 +164,10 @@
     width: 350px;
     margin: 6px;
 }
+
+/* .form .error {
+    background: red;
+} */
 
 .label .icon-input {
     color: #7f8c8d;
